@@ -1,3 +1,5 @@
+--Programme to find the prime factors of the numbers
+--eg 36->PF->2,2,9
 import java.util.Scanner;
 public class Main
 {
@@ -6,7 +8,7 @@ public class Main
 	    System.out.println("ROhit YAdav");
 	    Scanner sc = new Scanner(System.in);
 	    int a = sc.nextInt();
-	    int limit = (int)Math.sqrt(a);
+	    int limit = (int)Math.sqrt(a);          //Imp
 	    for(int j=2;j<=limit;j++)
 	    {
 	        while(a%j==0)
@@ -15,7 +17,7 @@ public class Main
 	                 a = a/j;
 	        }
 	    }
-	    if(a>2)
+	    if(a>2)                                           //if there nothing to show and still numbers is greater then 2 means it has no primt facrors
 	  {
 	        System.out.println(a);
 	   }
