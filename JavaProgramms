@@ -23,3 +23,200 @@ public class Main
 	   }
 	}
 }
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+/******************************************************************************
+
+
+*******************************************************************************/
+/*import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Good morning ,rohit :)");
+		Scanner sc = new Scanner(System.in);
+		char ch = sc.next().charAt(0);
+		boolean isVowel =false;
+		switch(ch)
+		{
+		    case 'a' :
+		        case 'e' :
+		            case 'i' :
+		                case 'o' :
+		                    case 'u' : isVowel=true;
+		}
+		if(isVowel!=false)
+		{
+		    System.out.println("Vowe");
+		}
+		else
+		{
+		if(ch>='a' && ch<='z' || ch>='A' && ch <='Z')
+		{
+		    System.out.println("consonent");
+		}
+		else
+		{
+		System.out.println("PLs correct the input:");    
+		}
+		}
+	}
+}*/
+
+/*class Main
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello World");
+    }
+}
+
+/* Count the numbers of blank in the string*/
+
+
+/*class Main
+{
+public static void main(String args[])    
+{
+    String str = "i am adult";
+    int len = str.length();
+    int count=0;
+    for(int i=0;i<len;i++)
+    {
+        if(str.charAt(i)==' ')
+        {
+            count++;
+        }
+    }
+
+    System.out.println(count);
+}
+}*/
+
+/*wap a programme to add eg 183=1+8+3=12=1+2=3 ans */
+
+/*class Main
+{
+    public static void main(String args[])
+    {
+        int no = 189;
+        int b=0;
+        int ds=0;
+        int c=0;
+        int d=0;
+        int len= (int)(Math.log10(no)+1);
+        for(int i=0;i<len;i++)
+        {
+          b= no%10;
+          ds=ds+b;
+          no=no/10;
+        }
+        int len1=(int)(Math.log10(ds)+1);
+        for(int j=0;j<=len1;j++)
+        {
+            c=ds%10;
+            d=d+c;
+            ds=ds/10;
+        }
+        System.out.println(d);
+    }
+}*/
+
+
+/*write a programme to get perfect no*/
+
+/*import java.util.Scanner;
+class Main
+{
+   public static void main(String args[])
+   {
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       int sum=0;
+       int val=a;
+       if(a%2==0)
+       {
+         for(int i=1;i<=(a/2);i++)
+         {
+           if((a%i)==0)
+           sum = sum + i;
+         }
+         if(sum==val)
+         {
+             System.out.println("perfect");
+         }
+         else
+         {
+             System.out.println("Not perfect no");
+         }
+       }
+       else
+       {
+           System.out.println("not perfect no");
+       }
+       
+   }
+}
+*/
+
+/*write a programme to remove all tha special characters from the string*/
+
+/*class Main
+{
+    public static void main(String args[])
+    {
+        String str= "sh%$%$%^&kdjbfu34u893";
+        String str1= str.replaceAll("[^a-zA-Z0-9]","");
+        System.out.println(str1);
+    }
+}*/
+
+/*write  a programme to remove blankspaces in the string*/
+
+/*class Main{
+    public static void main(String args[])
+    {
+        String str = "QWFDFYFDSDSFYFCDTYDYibudb ibsdviubsd isbudiusbd sbdiusdb";
+        String str1 = str.replaceAll("[^a-zA-z]","");
+        String str2 = str.replaceAll("[^a-z]", "");
+        System.out.println(str2);
+    }
+}*/
+
+/*write a programme to find palindrome string*/
+ /*class Main
+    {
+    public static void main(String args[])
+    {
+    String str = "abna";
+    String rev = "";
+    int len = str.length();
+    for(int i=len-1;i>=0;i--)
+    {
+    rev = rev + str.charAt(i);
+    }
+    System.out.println(rev);
+    if(str.equals(rev))
+    {
+    System.out.println("palindrome");
+    }
+    else
+    {
+    System.out.println("not palindrome");
+    }
+    }
+    }
+  */
+
+/* Find numbers of word in the string */
+/*class Main
+{
+  public static void main (String args[])
+  {
+    String str = "dsb sjbdsd jsjdosd sjdbos";
+
+  }
+}*/
+
+
+
