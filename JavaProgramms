@@ -1,3 +1,4 @@
+--------------------------------------------------update<1>---------------------------------------------
 --Programme to find the prime factors of the numbers
 --eg 36->PF->2,2,9
 import java.util.Scanner;
@@ -23,11 +24,7 @@ public class Main
 	   }
 	}
 }
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-/******************************************************************************
-
-
-*******************************************************************************/
+-------------------------------------------------------------------update<2>------------------------------------------------------------------------------------------
 /*import java.util.Scanner;
 public class Main
 {
@@ -217,6 +214,117 @@ class Main
 
   }
 }*/
+ 
+ -----------------------------------------update<3>-------------------------------------------------------
+ /*wap to find second largest element in the array*/
+/*public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int[] a = {1,4,2,45,6,7,7};
+		int len = a.length;
+		int max=a[0];
+		for(int i=0;i<len;i++)
+		{
+		    if(a[i]>max)
+		    {
+		        max=a[i];
+		    }
+		}
+	System.out.println(max);
+	for(int i=0 ;i<len;i++)
+	{
+	    if(a[i]==max)
+	    {
+	        a[i]=a[i+1];
+	    }
+	}
+	int b= a.length;
+	int max2 = a[0];
+	for(int j=0;j<b;j++)
+	{
+	    if(a[j]>max2)
+	    {
+	        max2=a[j];
+	    }
+	}
+	System.out.println(max2);
+	}
+}
+*/
+
+
+
+/* programme to execute insertion sort in java 
+import java.util.*;
+class Main
+{
+    void SelectionSort(int array[])
+    {
+        int size = array.length;
+        for(int step=0;step<size-1;step++)
+        {
+            int min_index = step;
+            for(int j= step+1;j<size;j++)
+            {
+                if(array[j]<array[min_index])
+                {
+                     min_index=j;
+                }
+            }
+            int temp = array[step];
+            array[step]=array[min_index];
+            array[min_index]=temp;
+        }
+    }
+    public static void main(String args[])
+    {
+      Main n =new Main();
+      int[] array ={3,2,5,6,8,4,1,0,9}; 
+    
+      n.SelectionSort(array);
+      System.out.println("sorted array");
+      System.out.println(Arrays.toString(array));
+    }
+}
+*/
+
+/*insertion sort 
+
+import java.util.*;
+class Main
+{
+    void InsertionSort(int array1[])
+    {
+        int size = array1.length;
+        for(int i=1;i<size;i++)
+        {
+            int current =array1[i];
+            int j=i-1;
+            while((array1[j]>current) && j>0 )
+            {
+                array1[j+1]=array1[j];
+                j--;
+            }
+            array1[j+1]=current;
+        }
+    }
+    public static void main(String args[])
+    {
+        int[] data = {3,2,5,6,5};
+        Main m = new Main();
+        m.InsertionSort(data);
+        System.out.println(Arrays.toString(data));
+    }
+}
+*/
+
+
+
+
+
+
+
 
 
 
