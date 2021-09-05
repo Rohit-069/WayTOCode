@@ -318,6 +318,48 @@ class Main
     }
 }
 */
+------------------------------------update<4>-------------------------
+//programme to find all substring 
+public class Substring_1
+{
+    public static void main(String args[])
+    {
+        String str ="ABCD";
+        for(int i=0;i<str.length();i++)
+        {
+            for(int j=i+1;j<=str.length();j++)
+            {
+                System.out.println(str.substring(i,j));
+            }
+        }
+    }
+}
+
+//Easy way to get the all permutation of a stiring.
+class permutation_1
+{
+public static void main(String args[])
+{
+    String s = "123";
+    String v = "";
+    permutation(s ,v);
+}
+static void permutation(String s ,String v)
+{
+    if(s.length()==0)
+    {
+        System.out.println(v+" ");
+    }
+   for(int i=0;i<s.length();i++)
+   {
+       char c = s.charAt(i);
+       String left = s.substring(0,i);
+       String right= s.substring(i+1);
+       String rest = left+right;
+       permutation(rest ,v+c);
+   }
+}
+}
 
 
 
